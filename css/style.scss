@@ -14,6 +14,10 @@ $breakpoints: ( //キー　値
     }
 }
 
+$warm: #df744a;
+$lemon: #dcb239;
+$peach: #fedcd2;
+$powder: #bfd8d2;
 
 body {
     font-size: 14px;
@@ -65,6 +69,7 @@ img {
         font-size: 20px;
         font-weight: bold;
         margin-left: 20px;
+        line-height: 1;
 
     }
 
@@ -102,12 +107,28 @@ img {
         display: flex;
         justify-content: flex-end;
         &-left {
-            width: 115px;
+            width: 130px;
             padding-top: 12px;
         }
 
-        &__icon {
-            margin-right: 5px;
+        &-btn {
+            width: 120px;
+            height: 50px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 16px;
+            background: $warm;
+            text-align: center;
+            //box-shadow: 1px 1px 7px #3d3d3d;
+            border: 1px solid #333333;
+            margin: 10px 20px 10px 0;
+            padding: 10px 0;
+            }
+    
+            &-a {
+                color: #333333;
+    
+            }
         }
     
         &__tel {
@@ -117,26 +138,6 @@ img {
         font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',YuGothic,'Yu Gothic',sans-serif;
         }
 
-
-        &-btn {
-        width: 120px;
-        height: 50px;
-        border-radius: 4px;
-        font-weight: bold;
-        font-size: 16px;
-        background: #df744a;
-        text-align: center;
-        box-shadow: 4px 4px 7px #cccccc;
-        margin: 10px 20px 10px 8px;
-        padding: 10px 0;
-
-
-        &-a {
-            color: rgb(41, 40, 40);
-
-        }
-    }
-}
 }
 
 
@@ -199,7 +200,7 @@ img {
         font-family: Font Awesome\ 6 Free;
         font-weight: 400;
         margin-right: 10px;
-        color: #dcb239;
+        color: $lemon;
     }
    }
 }
@@ -210,7 +211,7 @@ img {
    &__Message {
        width: 100%;
        height: 300px;
-       background: #bfd8d2;
+       background: $powder;
    }
 
    &__Message-box {
@@ -224,7 +225,7 @@ img {
        font-size: 30px;
        font-weight: bold;
        text-align: center;
-       border-bottom: 2px solid #dcb239;
+       border-bottom: 2px solid $lemon;
    }
 
    &__text {
@@ -235,16 +236,17 @@ img {
 
 
 .duties {
-    padding: 40px 0;
 
     &__title {
-font-size: 30px;
-font-weight: bold;
-margin-left: 20px;
+       font-size: 30px;
+       font-weight: bold;
+       margin-left: 20px;
+       padding: 100px 0 40px 0;
     }
 
     &__items {
         display: flex;
+        margin-top: 40px;
         
     }
 
@@ -252,8 +254,7 @@ margin-left: 20px;
         position: relative;
         width: 450px;
         height: 450px;
-        //background: #dcb239;
-        //border-radius: 50%;
+
 
         &-img {
             width: 450px;
@@ -287,5 +288,207 @@ margin-left: 20px;
         -1px 1px 0 rgb(218, 216, 216), 1px -1px 0 rgb(218, 216, 216),
         0px 1px 0 rgb(218, 216, 216),  0-1px 0 rgb(218, 216, 216),
         -1px 0 0 rgb(218, 216, 216), 1px 0 0 rgb(218, 216, 216);
+    }
+}
+
+
+
+.gp {
+
+    &__title {
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 20px;
+        padding: 100px 0 40px 0;
+     }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        width: 800px;
+        height: 800px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        width: 400px;
+        height: 400px;
+        position: relative;
+
+        &:nth-child(2n) {
+            border-left: 2px solid $lemon;
+        }
+        &:nth-child(-n+2) {
+            border-bottom: 2px solid $lemon;
+        }
+    }
+
+    &__box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate( - 50%, - 50% );
+        &-a {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate( - 50%, - 50% );
+        }
+    }
+
+    &__item-title {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1;
+    }
+
+    &__contents {
+        width: 300px;
+        text-align: center;
+        margin-top: 20px;
+
+    }
+
+    &__title-box {
+        display: flex;
+    }
+
+
+    &__img {
+        &-1 {
+        position: absolute;
+        width: 90px;
+        bottom: 20px;
+        left: 40px;
+
+        }
+
+        &-2 {
+            position: absolute;
+            width: 90px;
+            top: 15px;
+            right: 10px;
+        }
+
+        &-3 {
+            position: absolute;
+            width: 100px;
+            bottom: 20px;
+            right: 35px;
+        }
+
+        &-4 {
+            position: absolute;
+            width: 120px;
+            bottom: 10px;
+            right: 10px;
+        }
+
+    }
+}
+
+
+.flow {
+    margin-top: 100px;
+
+    &__box {
+        width: 100%;
+        background: $peach;
+    }
+
+    &__title {
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 20px;
+        padding: 50px 0 70px 0;
+     }
+
+     &__items {
+         display: flex;
+         flex-flow: column;
+         justify-content: space-between;
+         width: 800px;
+         margin: 0 auto;
+         padding-bottom: 70px;
+     -ms-writing-mode: tb-rl;
+     writing-mode: vertical-rl;
+     text-orientation: upright;
+     }
+
+     &__item-title {
+         padding: 10px 0;
+         font-size: 18px;
+         font-weight: bold;
+         background: #f7ebe8;
+
+     }
+
+     &__text {
+         padding: 10px 0;
+         font-size: 16px;
+         background: #f7ebe8;
+     }
+
+     &__item {
+         height: 510px;
+         &:not(:last-child) {
+             padding-left: 20px;
+         }
+     }
+
+     &__tel {
+         padding-top: 25px;
+         //font-weight: bold;
+         font-size: 18px;
+         &-number {
+         margin-top: 15px;
+         font-size: 14px;
+
+
+     }
+    }
+
+     &__mail {
+         margin-top: 15px;
+         width: 40px;
+         height: 220px;
+         background: $warm;
+         border-radius: 5px;
+         margin-right: 5px;
+         //box-shadow: 1px 1px 7px #3d3d3d;
+         border: 1px solid #333333;
+
+         &-a {
+             display: inline-block;
+             color: #333333;
+             padding: 30px 9px;
+             font-size: 14px;
+             font-weight: bold;
+         }
+     }
+
+     &__arrow {
+         margin: 90px 20px 0 0;
+     }
+
+}
+
+.fa-caret-left {
+    font-size: 37px;
+    color: $lemon;
+
+}
+
+.flow__tel-icon {
+    font-size: 14px;
+    margin: 20px 0 5px 0;
+}
+
+
+
+.representative {
+    &__container {
+        width: 100%;
     }
 }

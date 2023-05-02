@@ -42,6 +42,7 @@ img {
   font-size: 20px;
   font-weight: bold;
   margin-left: 20px;
+  line-height: 1;
 }
 .header__nav {
   justify-content: space-between;
@@ -74,17 +75,8 @@ img {
   justify-content: flex-end;
 }
 .header__contactUs-left {
-  width: 115px;
+  width: 130px;
   padding-top: 12px;
-}
-.header__contactUs__icon {
-  margin-right: 5px;
-}
-.header__contactUs__tel {
-  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", YuGothic, "Yu Gothic", sans-serif;
-}
-.header__contactUs__time {
-  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", YuGothic, "Yu Gothic", sans-serif;
 }
 .header__contactUs-btn {
   width: 120px;
@@ -94,12 +86,18 @@ img {
   font-size: 16px;
   background: #df744a;
   text-align: center;
-  box-shadow: 4px 4px 7px #cccccc;
-  margin: 10px 20px 10px 8px;
+  border: 1px solid #333333;
+  margin: 10px 20px 10px 0;
   padding: 10px 0;
 }
-.header__contactUs-btn-a {
-  color: rgb(41, 40, 40);
+.header__contactUs-a {
+  color: #333333;
+}
+.header__tel {
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", YuGothic, "Yu Gothic", sans-serif;
+}
+.header__time {
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", YuGothic, "Yu Gothic", sans-serif;
 }
 
 .top {
@@ -184,16 +182,15 @@ img {
   margin-top: 20px;
 }
 
-.duties {
-  padding: 40px 0;
-}
 .duties__title {
   font-size: 30px;
   font-weight: bold;
   margin-left: 20px;
+  padding: 100px 0 40px 0;
 }
 .duties__items {
   display: flex;
+  margin-top: 40px;
 }
 .duties__item {
   position: relative;
@@ -221,5 +218,162 @@ img {
   text-align: center;
   color: #090909;
   text-shadow: 1px 1px 0 rgb(218, 216, 216), -1px -1px 0 rgb(218, 216, 216), -1px 1px 0 rgb(218, 216, 216), 1px -1px 0 rgb(218, 216, 216), 0px 1px 0 rgb(218, 216, 216), -1px 0 rgb(218, 216, 216), -1px 0 0 rgb(218, 216, 216), 1px 0 0 rgb(218, 216, 216);
+}
+
+.gp__title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding: 100px 0 40px 0;
+}
+.gp__items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+}
+.gp__item {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+.gp__item:nth-child(2n) {
+  border-left: 2px solid #dcb239;
+}
+.gp__item:nth-child(-n+2) {
+  border-bottom: 2px solid #dcb239;
+}
+.gp__box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gp__box-a {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gp__item-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+}
+.gp__contents {
+  width: 300px;
+  text-align: center;
+  margin-top: 20px;
+}
+.gp__title-box {
+  display: flex;
+}
+.gp__img-1 {
+  position: absolute;
+  width: 90px;
+  bottom: 20px;
+  left: 40px;
+}
+.gp__img-2 {
+  position: absolute;
+  width: 90px;
+  top: 15px;
+  right: 10px;
+}
+.gp__img-3 {
+  position: absolute;
+  width: 100px;
+  bottom: 20px;
+  right: 35px;
+}
+.gp__img-4 {
+  position: absolute;
+  width: 120px;
+  bottom: 10px;
+  right: 10px;
+}
+
+.flow {
+  margin-top: 100px;
+}
+.flow__box {
+  width: 100%;
+  background: #fedcd2;
+}
+.flow__title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding: 50px 0 70px 0;
+}
+.flow__items {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 800px;
+  margin: 0 auto;
+  padding-bottom: 70px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+.flow__item-title {
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  background: #f7ebe8;
+}
+.flow__text {
+  padding: 10px 0;
+  font-size: 16px;
+  background: #f7ebe8;
+}
+.flow__item {
+  height: 510px;
+}
+.flow__item:not(:last-child) {
+  padding-left: 20px;
+}
+.flow__tel {
+  padding-top: 25px;
+  font-size: 18px;
+}
+.flow__tel-number {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.flow__mail {
+  margin-top: 15px;
+  width: 40px;
+  height: 220px;
+  background: #df744a;
+  border-radius: 5px;
+  margin-right: 5px;
+  border: 1px solid #333333;
+}
+.flow__mail-a {
+  display: inline-block;
+  color: #333333;
+  padding: 30px 9px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.flow__arrow {
+  margin: 90px 20px 0 0;
+}
+
+.fa-caret-left {
+  font-size: 37px;
+  color: #dcb239;
+}
+
+.flow__tel-icon {
+  font-size: 14px;
+  margin: 20px 0 5px 0;
+}
+
+.representative__container {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
