@@ -18,6 +18,10 @@ body {
   }
 }
 
+.main-inner {
+  max-width: 890px;
+}
+
 img {
   width: 100%;
 }
@@ -107,6 +111,7 @@ img {
 }
 
 .side {
+  border-radius: 10px;
   width: 210px;
   height: 700px;
   background: #fff;
@@ -115,6 +120,7 @@ img {
   position: relative;
 }
 .side__feceBook img {
+  border-radius: 10px 10px 0 0;
   width: 100%;
 }
 .side__feceBook-link {
@@ -158,9 +164,11 @@ img {
 }
 
 .main {
-  max-width: 890px;
+  width: 890px;
 }
 .main__Message {
+  border: 0.5px solid #333333;
+  border-radius: 10px;
   width: 100%;
   height: 300px;
   background: #bfd8d2;
@@ -192,6 +200,23 @@ img {
   display: flex;
   margin-top: 40px;
 }
+.duties__title-a {
+  font-size: 52px;
+  line-height: 1.25;
+  color: rgba(212, 188, 6, 0.3490196078);
+  width: 500px;
+  text-align: center;
+  top: -95px;
+  position: absolute;
+  font-family: "Bruno Ace SC", cursive;
+  font-family: "Great Vibes", cursive;
+  font-family: "Italianno", cursive;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Meddon", cursive;
+  font-family: "Monsieur La Doulaise", cursive;
+  font-family: "Sacramento", cursive;
+  font-family: "Style Script", cursive;
+}
 .duties__item {
   position: relative;
   width: 450px;
@@ -220,11 +245,40 @@ img {
   text-shadow: 1px 1px 0 rgb(218, 216, 216), -1px -1px 0 rgb(218, 216, 216), -1px 1px 0 rgb(218, 216, 216), 1px -1px 0 rgb(218, 216, 216), 0px 1px 0 rgb(218, 216, 216), -1px 0 rgb(218, 216, 216), -1px 0 0 rgb(218, 216, 216), 1px 0 0 rgb(218, 216, 216);
 }
 
+/* 共通 */
+/* タイトル */
+.side-scroll-list-wrapper {
+  position: relative;
+  width: 100%;
+  width: 70%;
+  height: 700px;
+  margin-top: 100px;
+}
+
+.side-scroll-list {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: flex;
+  gap: 0 60px;
+}
+
+.side-scroll-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 420px;
+}
+
+.side-scroll-item + .side-scroll-item {
+  margin-left: 60px;
+}
+
 .gp__title {
   font-size: 30px;
   font-weight: bold;
   margin-left: 20px;
-  padding: 100px 0 40px 0;
+  padding: 100px 0 150px 0;
 }
 .gp__items {
   display: flex;
@@ -299,8 +353,16 @@ img {
   margin-top: 100px;
 }
 .flow__box {
+  border: 0.5px solid #333333;
+  border-radius: 10px;
+  position: relative;
   width: 100%;
-  background: #fedcd2;
+  height: 100%;
+  background: url(../img/a\ bunch\ of\ purple\ flowers\ with\ yellow\ centers\ small\ JKoySyJDJn.jpeg) center center/cover;
+}
+.flow__filter {
+  border-radius: 10px;
+  background-color: rgba(254, 220, 210, 0.5058823529);
 }
 .flow__title {
   font-size: 30px;
@@ -322,18 +384,21 @@ img {
   padding: 10px 0;
   font-size: 18px;
   font-weight: bold;
-  background: #f7ebe8;
 }
 .flow__text {
   padding: 10px 0;
   font-size: 16px;
-  background: #f7ebe8;
 }
 .flow__item {
   height: 510px;
 }
 .flow__item:not(:last-child) {
   padding-left: 20px;
+}
+.flow__border {
+  border: 0.5px solid #333333;
+  border-radius: 10px;
+  background: rgba(252, 248, 247, 0.662745098);
 }
 .flow__tel {
   padding-top: 25px;
@@ -373,7 +438,128 @@ img {
   margin: 20px 0 5px 0;
 }
 
-.representative__container {
+.representative {
   width: 100%;
+  height: 400px;
+}
+.representative__container {
+  display: flex;
+}
+.representative__left {
+  width: 60%;
+}
+.representative__title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding: 100px 0 40px 0;
+}
+.representative__message {
+  width: 535px;
+  font-size: 20px;
+  padding: 15px 49px;
+}
+.representative__right {
+  width: 40%;
+  border: 0.5px solid #333333;
+  border-radius: 30px;
+}
+.representative__right img {
+  border-radius: 30px;
+}
+
+.access__titlle {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding: 100px 0 40px 0;
+}
+.access__box {
+  display: flex;
+  width: 100%;
+}
+.access__left {
+  width: 60%;
+}
+.access__right {
+  width: 40%;
+  padding-left: 20px;
+}
+.access__address {
+  font-family: "TsukuBRdGothic-Regular", YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.access__number {
+  font-size: 17px;
+}
+.access__guide {
+  font-family: "TsukuBRdGothic-Regular", YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+  font-size: 17px;
+}
+.access__time {
+  display: flex;
+  margin-top: 15px;
+  font-family: "TsukuBRdGothic-Regular", YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+  font-size: 17px;
+}
+
+.inquiry {
+  background: url(../img/00003471_500daf.jpg) center center/cover;
+  text-align: center;
+  margin-top: 100px;
+  font-family: "TsukuBRdGothic-Regular", YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+  width: 100%;
+  height: 300px;
+}
+.inquiry__filter {
+  background: rgba(244, 242, 243, 0.37);
+  padding-top: 30px;
+}
+.inquiry__title {
+  font-size: 40px;
+  font-weight: bold;
+}
+.inquiry__tel-time {
+  font-size: 18px;
+  display: flex;
+}
+.inquiry__tel-number {
+  font-size: 40px;
+}
+.inquiry__icon {
+  margin-right: 15px;
+  font-size: 40px;
+}
+.inquiry__icon-meil {
+  margin-right: 10px;
+}
+.inquiry__mail {
+  font-size: 25px;
+  width: 400px;
+  height: 80px;
+  background: #df744a;
+  border-radius: 5px;
+  border: 1px solid #333333;
+}
+.inquiry__mail a {
+  color: #333333;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 15px 0;
+}
+.inquiry__box {
+  width: 785px;
+  margin: 25px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  width: 100%;
+  height: 800px;
 }
 /*# sourceMappingURL=style.css.map */

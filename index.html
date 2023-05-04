@@ -28,7 +28,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Great+Vibes&family=Italianno&family=Josefin+Sans:wght@100;300&family=Meddon&family=Monsieur+La+Doulaise&family=Sacramento&family=Style+Script&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
@@ -93,11 +98,12 @@
             <li class="side__Individual-link">アクセス</li>
             <li class="side__Individual-link">コンタクト</li>
         </ul>
-    </div><!--side__Individual-->
+        </div><!--side__Individual-->
 </div><!--side-->
 
 <div class="main">
 
+<div class="main-inner">
 <div class="main__Message">
 <div class="main__Message-box">
 <h1 class="main__title">〇〇〇〇行政書士事務所へようこそ</h1> 
@@ -107,12 +113,22 @@
 
 
 
+<div class="box main-inner">コンテンツ入ります</div>
+</div>
+
+
+</div><!--main-->
+</div><!--contents-->
 
 
 
-<div class="duties">
+
+<!--<div class="duties">
     <div class="duties__title">業務案内</div>
+
     <div class="duties__items">
+
+
         <div class="duties__item">
             <div class="duties__item-img"><img src="img/00000616_ea929f.png" alt=""></div>
             <div class="duties__text">
@@ -176,8 +192,128 @@
             <div class="duties__item-contents">業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。</div>
             </div>
         </div>
+
+
+
+
     </div><!--duties__items-->
-</div><!--duties-->
+<!--</div><!--duties-->
+
+
+
+
+
+
+
+
+<!--<h1 class="title">GSAP Pinning Side Scroll</h1>
+<section class="normal section">
+  <div class="container">
+    <h2 class="normal-heading heading">普通のセクション</h2>
+    <p class="normal-text">
+      テキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよ
+    </p>
+  </div>
+</section>-->
+
+<section class="side-scroll section">
+  <div class="side-scroll-container container">
+    <!--<h2 class="side-scroll-heading heading">
+      横にスクロールするセクション
+    </h2>-->
+    <div class="duties">
+        <div class="duties__title">業務案内</div>
+    <div class="side-scroll-list-wrapper">
+      <div class="side-scroll-list duties__items">
+        <div class="side-scroll-item duties__item">
+            <h2 class="duties__title-a">Application for<br> Permanent Residence Permit</h2>
+            <div class="duties__item-img"><img src="img/00000616_ea929f.png" alt=""></div>
+            <div class="duties__text">
+            <div class="duties__item-title">永住許可申請</div>
+            <div class="duties__item-contents">業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。</div>
+            </div>
+        </div>
+        <div class="side-scroll-item duties__item">
+            <h2 class="duties__title-a">Change of status of residence</h2>
+            <div class="duties__item-img"><img src="img/00000616_ea929f.png" alt=""></div>
+            <div class="duties__text">
+            <div class="duties__item-title">在留資格の変更</div>
+            <div class="duties__item-contents">業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。</div>
+            </div>
+        </div>
+        <div class="side-scroll-item duties__item">
+            <h2 class="duties__title-a">Renewal of Period of Stay<br> Permanent Residence Permit</h2>
+            <div class="duties__item-img"><img src="img/00000616_ea929f.png" alt=""></div>
+            <div class="duties__text">
+            <div class="duties__item-title">在留期間の更新</div>
+            <div class="duties__item-contents">業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。</div>
+            </div>
+        </div>
+        <div class="side-scroll-item duties__item">
+            <h2 class="duties__title-a">Application for<br> Certificate of Eligibility</h2>
+            <div class="duties__item-img"><img src="img/00000616_ea929f.png" alt=""></div>
+            <div class="duties__text">
+            <div class="duties__item-title">在留資格認定証明書交付申請</div>
+            <div class="duties__item-contents">業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。</div>
+            </div>
+        </div>
+        <div class="side-scroll-item duties__item">
+            <h2 class="duties__title-a">Application for naturalization</h2>
+            <div class="duties__item-img"><img src="img/00000616_ea929f.png" alt=""></div>
+            <div class="duties__text">
+            <div class="duties__item-title">帰化申請</div>
+            <div class="duties__item-contents">業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。</div>
+            </div>
+        </div>
+        <div class="side-scroll-item duties__item">
+            <h2 class="duties__title-a">Short stay</h2>
+            <div class="duties__item-img"><img src="img/00000616_ea929f.png" alt=""></div>
+            <div class="duties__text">
+            <div class="duties__item-title">短期滞在（親族訪問等）</div>
+            <div class="duties__item-contents">業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。</div>
+            </div>
+        </div>
+        <div class="side-scroll-item duties__item">
+            <h2 class="duties__title-a">Support for<br> Cooperative Establishment</h2>
+            <div class="duties__item-img"><img src="img/00000616_ea929f.png" alt=""></div>
+            <div class="duties__text">
+            <div class="duties__item-title">協同組合設立サポート</div>
+            <div class="duties__item-contents">業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。</div>
+            </div>
+        </div>
+        <div class="side-scroll-item duties__item">
+            <h2 class="duties__title-a">Support for Establishment<br> of Japanese Language Schools</h2>
+                <div class="duties__item-img"><img src="img/00000616_ea929f.png" alt=""></div>
+            <div class="duties__text">
+            <div class="duties__item-title">日本語学校設立サポート</div>
+            <div class="duties__item-contents">業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。業務内容詳細入ります。</div>
+            </div>
+        </div>
+        </div><!--side-scroll-list duties__items-->
+
+      </div><!--side-scroll-list-wrapper-->
+    </div><!--duties-->
+  </div><!--side-scroll-container container-->
+</section>
+
+<!--<section class="normal section">
+  <div class="container">
+    <h2 class="normal-heading heading">普通のセクション</h2>
+    <p class="normal-text">
+      テキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよテキストが入りますよ
+    </p>
+  </div>
+</section>-->
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -223,37 +359,49 @@
 
 <div class="flow">
     <div class="flow__box"><!--縦書き-->
+        <div class="flow__filter">
         <div class="flow__title">サービスの流れ</div>
         <ul class="flow__items">
             <li class="flow__item">
+                <div class="flow__border">
                 <div class="flow__item-title">まずはお問い合わせ下さい</div>
                 <div class="flow__text">内容が入ります。内容が入ります。内容が入ります。内容が入ります。内容が入ります。内容が入ります。</div>
+                </div><!--flow__border-->
                 <div class="flow__tel"><i class="fa-solid fa-phone flow__tel-icon"></i>お電話<span class="flow__tel-number">23&nbsp;456&nbsp;7891</span></div>
                 <div class="flow__mail"><a class="flow__mail-a" href="/"><i class="fa-regular fa-envelope"></i>メールでお問い合わせ</a></div>
                 <div class="flow__arrow"><i class="fa-solid fa-caret-left"></i></div>
             </li>
             <li class="flow__item">
+                <div class="flow__border">
                 <div class="flow__item-title">手数料のお振込をお願いいたします</div>
                 <div class="flow__text">内容が入ります。内容が入ります。内容が入ります。内容が入ります。内容が入ります。内容が入ります。</div>
+                </div><!--flow__border-->
                 <div class="flow__arrow"><i class="fa-solid fa-caret-left"></i></div>
             </li>
             <li class="flow__item">
+                <div class="flow__border">
                 <div class="flow__item-title">各種書類を作成いたします</div>
                 <div class="flow__text">内容が入ります。内容が入ります。内容が入ります。内容が入ります。内容が入ります。内容が入ります。</div>
+                </div><!--flow__border-->
                 <div class="flow__arrow"><i class="fa-solid fa-caret-left"></i></div>
             </li>
             <li class="flow__item">
+                <div class="flow__border">
                 <div class="flow__item-title">管轄の入国管理局にて申請を行います</div>
                 <div class="flow__text">内容が入ります。内容が入ります。内容が入ります。内容が入ります。内容が入ります。内容が入ります。</div>
+                </div><!--flow__border-->
                 <div class="flow__arrow"><i class="fa-solid fa-caret-left"></i></div>
             </li>
             <li class="flow__item">
+                <div class="flow__border">
                 <div class="flow__item-title">新しい在留カード等をご希望の方法によりお渡しいたします</div>
                 <div class="flow__text">内容が入ります。内容が入ります。内容が入ります。内容が入ります。内容が入ります。内容が入ります。</div>
+                </div><!--flow__border-->
             </li>
         </ul>
-    </div>
-</div>
+    </div><!--flow__filter-->
+    </div><!--flow__box-->
+</div><!--flow-->
 
 
 
@@ -275,58 +423,70 @@
 
 
 
-        <div class="representative__container">
-            <div class="representative__left">
+        <div class="representative">
             <div class="representative__title">
                 <p>ごあいさつ</p>
             </div>
+            <div class="representative__container">
+            <div class="representative__left">
             <div class="representative__message">
                 <p>申請取次行政書士の〇〇〇〇です。帰化申請や永住ビザ申請の代行を行っております。挨拶文入ります。挨拶文入ります。挨拶文入ります。挨拶文入ります。挨拶文入ります。挨拶文入ります。挨拶文入ります。</p>
             </div>
-            </div>
+            </div><!--representative__left-->
             <div class="representative__right">
-            <div class="representative__img"><img src="/" alt="代表顔写真"></div>
+            <div class="representative__img"><img src="img/00004975_791401.jpg" alt="代表顔写真"></div>
             </div>
         </div><!--representative__container-->
-
+        </div>
 
 
 
         <div class="access">
                 <div class="access__titlle">アクセス</div>
                 <div class="access__box">
-                    <div class="access__lef">
-                    <div class="access__map"></div>
-                </div>
+                    <div class="access__left">
+                    <div class="access__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24353.29156562132!2d139.57035922355294!3d35.69882011373413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee34e5038c2d%3A0x4de155903f849205!2z5LiJ6be544Gu5qOu44K444OW44Oq576O6KGT6aSo!5e0!3m2!1sja!2sjp!4v1683095162395!5m2!1sja!2sjp" width="100%" height="367" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                   </div><!--access__left-->
                 <div class="access__right">
                     <div class="access__address">
-                        〒123-4567<br>
-                        〇〇県〇〇市〇〇〇〇1-23-4 〇〇ビル3階
+                        <span class="access__number">〒123-4567</span><br>
+                        〇〇県〇〇市〇〇〇〇1-23-4<br> 〇〇ビル3階
                     </div>
-                    <div class="access__guide">JR〇〇駅西口から徒歩5分</div>
-                </div>
-                </div><!--access__box-->
+                    <div class="access__guide">(JR〇〇駅西口から徒歩5分)</div>
+
                 <div class="access__time">
                     <div class="access__time-left">営業時間</div>
                     <div class="access__time-right">09:30～19:30</div>
                 </div>
+            </div><!--access__right-->
+        </div><!--access__box-->
         </div><!--access-->
 
 
-        <div class="inquiry">
-            <div class="inquiry__tel">
-                <div class="inquiry__tel-number">03-1234-1234</div>
-                <div class="inquiry__tel-time">
-                    <div class="inquiry__time-left">営業時間</div>
-                    <div class="inquiry__time-right">09:30～19:30</div>
-                </div>
-            </div><!--inquiry__tel-->
-            <div class="inquiry__mail"><a href="/">メールはこちら</a></div>
+
+
+
+
+
+<div class="inquiry">
+    <div class="inquiry__filter">
+    <div class="inquiry__title">お問い合わせはこちら</div>
+    <p class="text">Please feel free to ask!</p>
+    <div class="inquiry__box">
+    <div class="inquiry__tel">
+        <div class="inquiry__tel-number"><i class="fa-solid fa-tty inquiry__icon"></i>03-1234-1234</div>
+        <div class="inquiry__tel-time">
+            <div class="inquiry__time-left">受付:</div>
+            <div class="inquiry__time-right">09:30～19:30&nbsp;(定休日：土・日・祝)</div>
         </div>
+    </div><!--inquiry__tel-->
+    <div class="inquiry__mail"><a href="/"><i class="fa-regular fa-envelope inquiry__icon-meil"></i>メールでお問い合わせ</a></div>
+    </div><!--inquiry__box-->
+    </div><!--inquiry__filter-->
+</div>
 
-</div><!--main-->
-
-</div><!--contents-->
 
         <footer>
             <div class="footer__logo">ロゴ</div>
@@ -348,6 +508,19 @@
         Copyright©2023  〇〇〇〇行政書士事務所 All Rights Reserved.
     </small>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script src="/js/script.js"></script>
 
