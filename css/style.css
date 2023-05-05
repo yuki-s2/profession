@@ -193,7 +193,6 @@ img {
 .duties__title {
   font-size: 30px;
   font-weight: bold;
-  margin-left: 20px;
   padding: 100px 0 40px 0;
 }
 .duties__items {
@@ -250,7 +249,6 @@ img {
 .side-scroll-list-wrapper {
   position: relative;
   width: 100%;
-  width: 70%;
   height: 700px;
   margin-top: 100px;
 }
@@ -277,19 +275,18 @@ img {
 .gp__title {
   font-size: 30px;
   font-weight: bold;
-  margin-left: 20px;
   padding: 100px 0 150px 0;
 }
 .gp__items {
   display: flex;
   flex-wrap: wrap;
-  width: 800px;
-  height: 800px;
-  margin: 0 auto;
+  width: 100%;
+  height: 900px;
+  justify-content: center;
 }
 .gp__item {
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
   position: relative;
 }
 .gp__item:nth-child(2n) {
@@ -357,8 +354,6 @@ img {
   border-radius: 10px;
   position: relative;
   width: 100%;
-  height: 100%;
-  background: url(../img/a\ bunch\ of\ purple\ flowers\ with\ yellow\ centers\ small\ JKoySyJDJn.jpeg) center center/cover;
 }
 .flow__filter {
   border-radius: 10px;
@@ -367,38 +362,35 @@ img {
 .flow__title {
   font-size: 30px;
   font-weight: bold;
-  margin-left: 20px;
-  padding: 50px 0 70px 0;
+  padding: 70px 0;
+  text-align: center;
 }
 .flow__items {
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
-  width: 800px;
   margin: 0 auto;
   padding-bottom: 70px;
   writing-mode: vertical-rl;
   text-orientation: upright;
 }
 .flow__item-title {
-  padding: 10px 0;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: bold;
 }
 .flow__text {
-  padding: 10px 0;
-  font-size: 16px;
+  font-size: 15px;
 }
 .flow__item {
-  height: 510px;
+  height: 525px;
 }
 .flow__item:not(:last-child) {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 .flow__border {
   border: 0.5px solid #333333;
   border-radius: 10px;
   background: rgba(252, 248, 247, 0.662745098);
+  padding: 20px;
 }
 .flow__tel {
   padding-top: 25px;
@@ -425,7 +417,7 @@ img {
   font-weight: bold;
 }
 .flow__arrow {
-  margin: 90px 20px 0 0;
+  margin: 90px 10px 0 0;
 }
 
 .fa-caret-left {
@@ -439,11 +431,11 @@ img {
 }
 
 .representative {
-  width: 100%;
   height: 400px;
 }
 .representative__container {
   display: flex;
+  width: 100%;
 }
 .representative__left {
   width: 60%;
@@ -451,13 +443,12 @@ img {
 .representative__title {
   font-size: 30px;
   font-weight: bold;
-  margin-left: 20px;
-  padding: 100px 0 40px 0;
+  padding: 100px 0;
 }
 .representative__message {
   width: 535px;
   font-size: 20px;
-  padding: 15px 49px;
+  margin: 60px 65px;
 }
 .representative__right {
   width: 40%;
@@ -468,15 +459,18 @@ img {
   border-radius: 30px;
 }
 
-.access__titlle {
+.access {
+  margin-top: 200px;
+}
+.access__title {
   font-size: 30px;
   font-weight: bold;
-  margin-left: 20px;
   padding: 100px 0 40px 0;
 }
 .access__box {
   display: flex;
-  width: 100%;
+  width: 900px;
+  margin: 100px auto;
 }
 .access__left {
   width: 60%;
@@ -514,11 +508,13 @@ img {
 }
 .inquiry__filter {
   background: rgba(244, 242, 243, 0.37);
-  padding-top: 30px;
+  width: 100%;
+  height: 100%;
 }
 .inquiry__title {
   font-size: 40px;
   font-weight: bold;
+  padding-top: 40px;
 }
 .inquiry__tel-time {
   font-size: 18px;
@@ -561,5 +557,37 @@ img {
 .box {
   width: 100%;
   height: 800px;
+}
+
+footer {
+  width: 100%;
+  background: #bfd8d2;
+  height: 100px;
+}
+
+.footer__box {
+  display: flex;
+  align-items: center;
+}
+.footer__logo {
+  font-size: 40px;
+  font-weight: bold;
+  width: 100px;
+}
+.footer__nav {
+  text-align: center;
+  margin: 0 auto;
+  padding-right: 100px;
+}
+.footer__nav-items {
+  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  width: 700px;
+}
+.footer__copyright {
+  text-align: center;
+  color: rgb(125, 128, 126);
 }
 /*# sourceMappingURL=style.css.map */
