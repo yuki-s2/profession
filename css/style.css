@@ -7,6 +7,7 @@ body {
   background: #EBEBEB;
   box-sizing: content-box;
   color: #333333;
+  background: url(../img/paint_00022.jpg) center center/cover;
 }
 
 @media screen and (min-width: 768px) {
@@ -88,7 +89,7 @@ img {
   border-radius: 4px;
   font-weight: bold;
   font-size: 16px;
-  background: #df744a;
+  background: rgba(223, 116, 74, 0.8235294118);
   text-align: center;
   border: 1px solid #333333;
   margin: 10px 20px 10px 0;
@@ -163,15 +164,12 @@ img {
   color: #dcb239;
 }
 
-.main {
-  width: 890px;
-}
 .main__Message {
   border: 0.5px solid #333333;
   border-radius: 10px;
   width: 100%;
   height: 300px;
-  background: #bfd8d2;
+  background: rgba(191, 216, 210, 0.337254902);
 }
 .main__Message-box {
   width: 600px;
@@ -188,6 +186,32 @@ img {
 .main__text {
   font-size: 18px;
   margin-top: 20px;
+}
+
+.advantages {
+  margin-top: 100px;
+}
+.advantages__container {
+  width: 100%;
+}
+.advantages__title {
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 50px;
+}
+.advantages__item {
+  margin-top: 40px;
+}
+.advantages__item-title {
+  border: 1px solid #333333;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+.advantages__text {
+  font-size: 18px;
+  padding: 20px;
 }
 
 .duties__title {
@@ -357,7 +381,7 @@ img {
 }
 .flow__filter {
   border-radius: 10px;
-  background-color: rgba(254, 220, 210, 0.5058823529);
+  background-color: rgba(254, 220, 210, 0.3411764706);
 }
 .flow__title {
   font-size: 30px;
@@ -404,7 +428,7 @@ img {
   margin-top: 15px;
   width: 40px;
   height: 220px;
-  background: #df744a;
+  background: rgba(223, 116, 74, 0.8235294118);
   border-radius: 5px;
   margin-right: 5px;
   border: 1px solid #333333;
@@ -497,6 +521,23 @@ img {
   font-family: "TsukuBRdGothic-Regular", YuGothic, "Yu Gothic", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
   font-size: 17px;
 }
+.access__map-btn {
+  width: 200px;
+  height: 40px;
+  border-radius: 2px;
+  background: #dcb239;
+  padding: 9px 0;
+  border: 0.5px solid #333333;
+  margin-top: 20px;
+}
+.access__map-btn a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  text-align: center;
+  color: #333333;
+}
 
 .inquiry {
   background: url(../img/00003471_500daf.jpg) center center/cover;
@@ -534,7 +575,7 @@ img {
   font-size: 25px;
   width: 400px;
   height: 80px;
-  background: #df744a;
+  background: rgba(223, 116, 74, 0.8235294118);
   border-radius: 5px;
   border: 1px solid #333333;
 }
@@ -561,7 +602,7 @@ img {
 
 footer {
   width: 100%;
-  background: #bfd8d2;
+  background: rgba(191, 216, 210, 0.337254902);
   height: 100px;
 }
 
@@ -576,14 +617,14 @@ footer {
 }
 .footer__nav {
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto 0;
   padding-right: 100px;
 }
 .footer__nav-items {
   display: inline-block;
   display: flex;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 15px;
   width: 700px;
 }
 .footer__copyright {
