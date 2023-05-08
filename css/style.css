@@ -89,7 +89,7 @@ img {
   border-radius: 4px;
   font-weight: bold;
   font-size: 16px;
-  background: rgba(223, 116, 74, 0.8235294118);
+  background: rgba(223, 116, 74, 0.7450980392);
   text-align: center;
   border: 1px solid #333333;
   margin: 10px 20px 10px 0;
@@ -217,86 +217,102 @@ img {
   padding: 20px;
 }
 
-.duties__title {
-  font-size: 30px;
-  font-weight: bold;
-  padding: 100px 0 40px 0;
+.duties__title-box {
+  position: relative;
+  width: 400px;
+  height: 400px;
 }
-.duties__items {
-  display: flex;
-  margin-top: 40px;
+.duties__title {
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
 }
 .duties__title-a {
-  font-size: 52px;
+  font-size: 30px;
   line-height: 1.25;
-  color: rgba(212, 188, 6, 0.3490196078);
-  width: 500px;
+  color: rgba(171, 177, 173, 0.8196078431);
+  width: 450px;
   text-align: center;
   top: -95px;
   position: absolute;
-  font-family: "Bruno Ace SC", cursive;
-  font-family: "Great Vibes", cursive;
-  font-family: "Italianno", cursive;
-  font-family: "Josefin Sans", sans-serif;
-  font-family: "Meddon", cursive;
-  font-family: "Monsieur La Doulaise", cursive;
-  font-family: "Sacramento", cursive;
-  font-family: "Style Script", cursive;
 }
 .duties__item {
   position: relative;
-  width: 450px;
-  height: 450px;
+  width: 550px;
+  height: 550px;
 }
 .duties__item-img {
   width: 450px;
   height: 450px;
   filter: opacity(95%);
+  margin: 0 auto;
+}
+.duties__item-img:hover {
+  width: 550px;
+  height: 550px;
+  transition-duration: 0.5s;
 }
 .duties__item-title {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
+  color: #4b4848;
+  font-family: "Yu Mincho Light", "YuMincho", "Yu Mincho", "游明朝体", sans-serif;
 }
 .duties__item-contents {
   font-size: 20px;
   font-weight: bold;
+  color: #7d6b08;
+  display: none;
 }
 .duties__text {
   position: absolute;
-  top: 120px;
-  left: 62px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
   width: 330px;
   text-align: center;
-  color: #090909;
-  text-shadow: 1px 1px 0 rgb(218, 216, 216), -1px -1px 0 rgb(218, 216, 216), -1px 1px 0 rgb(218, 216, 216), 1px -1px 0 rgb(218, 216, 216), 0px 1px 0 rgb(218, 216, 216), -1px 0 rgb(218, 216, 216), -1px 0 0 rgb(218, 216, 216), 1px 0 0 rgb(218, 216, 216);
+  text-shadow: 2px 2px 3px #fff, -2px -2px 3px #fff;
 }
 
-/* 共通 */
-/* タイトル */
-.side-scroll-list-wrapper {
-  position: relative;
-  width: 100%;
-  height: 700px;
-  margin-top: 100px;
+/* リセットCSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.side-scroll-list {
-  position: absolute;
-  top: 60px;
-  left: 0;
+.common__container {
   display: flex;
-  gap: 0 60px;
+  margin: 0 auto;
+  max-width: 900px;
+  width: 80%;
 }
 
-.side-scroll-item {
+/* GSAP ScrollTriggerエリア */
+.side-scroll__section {
+  background: rgba(220, 179, 57, 0.631372549);
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 420px;
+  overflow: hidden; /* はみ出た部分を隠しておく */
 }
 
-.side-scroll-item + .side-scroll-item {
-  margin-left: 60px;
+.side-scroll__itemOuter {
+  position: relative;
+  height: 700px;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.side-scroll__itemInner {
+  position: absolute;
+  top: 170px;
+  left: 0;
+  display: flex;
+  gap: 0 40px;
 }
 
 .gp__title {
@@ -431,7 +447,7 @@ img {
   margin-top: 15px;
   width: 40px;
   height: 220px;
-  background: rgba(223, 116, 74, 0.8235294118);
+  background: rgba(223, 116, 74, 0.7450980392);
   border-radius: 5px;
   margin-right: 5px;
   border: 1px solid #333333;
@@ -484,7 +500,7 @@ img {
   background: rgba(254, 220, 210, 0.6784313725);
 }
 .question__warm {
-  background: rgba(223, 116, 74, 0.8235294118);
+  background: rgba(223, 116, 74, 0.7450980392);
 }
 .question__Q {
   padding: 15px;
@@ -633,7 +649,7 @@ img {
   font-size: 25px;
   width: 400px;
   height: 80px;
-  background: rgba(223, 116, 74, 0.8235294118);
+  background: rgba(223, 116, 74, 0.7450980392);
   border-radius: 5px;
   border: 1px solid #333333;
 }

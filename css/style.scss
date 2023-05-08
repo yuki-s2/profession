@@ -14,7 +14,7 @@ $breakpoints: ( //キー　値
     }
 }
 
-$warm: #df744ad2;
+$warm: #df744abe;
 $lemon: #dcb339a1;
 $peach: #fedcd2ad;
 $powder: #bfd8d256;
@@ -290,34 +290,38 @@ img {
 
 
 .duties {
-    &__title {
-       font-size: 30px;
-       font-weight: bold;
-       padding: 100px 0 40px 0;
+
+    &__title-box {
+        position: relative;
+       width: 400px;
+       height: 400px;
     }
 
-    &__items {
-        display: flex;
-        margin-top: 40px;
-        
-    }
+    &__title {
+        font-size: 50px;
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+     }
 
     &__title-a {
-        font-size: 52px;
+        font-size: 30px;
         line-height: 1.25;
-        color: #d4bc0659;
-        width: 500px;
+        color: #abb1add1;
+        width: 450px;
         text-align: center;
         top: -95px;
         position: absolute;
-        font-family: 'Bruno Ace SC', cursive;
-        font-family: 'Great Vibes', cursive;
-        font-family: 'Italianno', cursive;
-        font-family: 'Josefin Sans', sans-serif;
-        font-family: 'Meddon', cursive;
-        font-family: 'Monsieur La Doulaise', cursive;
-        font-family: 'Sacramento', cursive;
-        font-family: 'Style Script', cursive;
+        //font-family: 'Bruno Ace SC', cursive;
+        //font-family: 'Great Vibes', cursive;
+        //font-family: 'Italianno', cursive;
+        //font-family: 'Josefin Sans', sans-serif;
+        //font-family: 'Meddon', cursive;
+        //font-family: 'Monsieur La Doulaise', cursive;
+        //font-family: 'Sacramento', cursive;
+        //font-family: 'Style Script', cursive;
         
         
 
@@ -325,46 +329,60 @@ img {
 
     &__item {
         position: relative;
-        width: 450px;
-        height: 450px;
+        width: 550px;
+        height: 550px;
 
 
         &-img {
             width: 450px;
             height: 450px;
             filter: opacity(95%);
+            margin: 0 auto;
+            &:hover {
+                width: 550px;
+                height: 550px; 
+                transition-duration: 0.5s;
+            }
         }
 
 
 
         &-title {
-            font-size: 30px;
+            font-size: 40px;
             font-weight: bold;
+            color: #4b4848;
+            font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+
         }
         &-contents {
             font-size: 20px;
             font-weight: bold;
-            
-    
+            color: #7d6b08;
+            display: none;
         }
     }
 
 
-
-    
-
-
     &__text {
         position: absolute;
-        top: 120px;
-        left: 62px;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%);
         width: 330px;
         text-align: center;
-        color: #090909;
-        text-shadow:1px 1px 0 rgb(218, 216, 216), -1px -1px 0 rgb(218, 216, 216),
-        -1px 1px 0 rgb(218, 216, 216), 1px -1px 0 rgb(218, 216, 216),
-        0px 1px 0 rgb(218, 216, 216),  0-1px 0 rgb(218, 216, 216),
-        -1px 0 0 rgb(218, 216, 216), 1px 0 0 rgb(218, 216, 216);
+        //text-shadow:0 0 20px #FFF;
+        text-shadow: 2px 2px 3px #fff,
+-2px -2px 3px #fff;
+       //color: #ffff0c;
+       //text-shadow:1px 1px 0 rgb(32, 32, 32), -1px -1px 0 rgb(32, 32, 32),
+       //-1px 1px 0 rgb(32, 32, 32), 1px -1px 0 rgb(32, 32, 32),
+       //0px 1px 0 rgb(32, 32, 32),  0-1px 0 rgb(32, 32, 32),
+       //-1px 0 0 rgb(32, 32, 32), 1px 0 0 rgb(32, 32, 32);
+       //text-shadow:4px 4px 0 rgb(218, 216, 216), -4px -4px 0 rgb(218, 216, 216),
+       //-4px 4px 0 rgb(218, 216, 216), 4px -4px 0 rgb(218, 216, 216),
+       //0px 4px 0 rgb(218, 216, 216),  0-4px 0 rgb(218, 216, 216),
+       //-4px 0 0 rgb(218, 216, 216), 4px 0 0 rgb(218, 216, 216);
+       
     }
 }
 
@@ -373,109 +391,45 @@ img {
 
 
 
-
-
-
-
-
-
-
-
-//* {
-//    margin: 0;
-//    padding: 0;
-//    box-sizing: border-box;
-//  }
-//  
-//  ul,
-//  li {
-//    list-style: none;
-//  }
-//  
-//  body {
-//    background-color: #eeebdd;
-//    color: #1b1717;
-//    font-family: Avenir, 'Helvetica neue', Helvetica, sans-serif;
-//  }
-  
-  /* 共通 */
-  //.section {
-  //  width: 100%;
-  //  padding: 100px 0;
-  //}
-  //.container {
-    //width: 80%;
-    //max-width: 900px;
-   // margin: 0 auto;
-  //}
-  //
- //.heading {
- //  font-size: 40px;
- //  font-weight: 700;
- //  letter-spacing: 0.05em;
- //}
-  
-  /* タイトル */
-  //.title {
-  //  padding: 200px 0 20px;
-  //  font-size: 52px;
-  //  text-align: center;
-  //
-  //
-  //普通のセクション */
-  //normal-text {
-  // font-size: 20px;
-  // letter-spacing: 0.08em;
-  // margin-top: 60px;
-  //
-  //
-  //横スクロールセクション */
-  //de-scroll {
-  ///background-color: #1b1717;
-  //isplay: flex;
-  //ustify-content: center;
-  //lign-items: center;
-  //
-  //
-  //de-scroll-heading {
-  //olor: #eeebdd;
-  //
-  
-  .side-scroll-list-wrapper {
-    position: relative;
-    width: 100%;
-    //width: 70%;
-    height: 700px;
-    margin-top: 100px;
+/* リセットCSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   
-  .side-scroll-list {
-    position: absolute;
-    top: 60px;
-    left: 0;
+  
+  .common__container {
     display: flex;
-    gap: 0 60px;
+    margin: 0 auto;
+    max-width: 900px;
+    width: 80%;
   }
   
-  .side-scroll-item {
+  /* GSAP ScrollTriggerエリア */
+  .side-scroll__section {
+    background: $lemon;
     display: flex;
     align-items: center;
     justify-content: center;
-    //max-width: 890px;
-    height: 420px;
-    //background-color: #eeebdd;
-    //color: #1b1717;
-    //font-size: 32px;
-    //font-weight: 700;
+    overflow: hidden;/* はみ出た部分を隠しておく */
   }
   
-  .side-scroll-item + .side-scroll-item {
-    margin-left: 60px;
+  .side-scroll__itemOuter {
+    position: relative;
+    height: 700px;
+    width: 100%;
+    margin-top: 70px;
   }
-
-
-
-
+  
+  .side-scroll__itemInner {
+    position: absolute;
+    top: 170px;
+    left: 0;
+    display: flex;
+    gap: 0 40px;
+  }
+  
 
 
 
@@ -1009,5 +963,4 @@ footer {
     }
  
 }
-
 
